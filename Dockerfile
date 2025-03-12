@@ -7,5 +7,5 @@ COPY . .
 
 EXPOSE 5000
 
-# Use Gunicorn instead of raw Python
+# Run Flask app using Gunicorn (Better for Production)
 CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
